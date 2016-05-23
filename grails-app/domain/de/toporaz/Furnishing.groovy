@@ -7,10 +7,10 @@ class Furnishing {
 
     /** Production info **/
     static hasMany = [donor:Person,producer:Person, measurement:Measurement, furnishingChangeLocation:FurnishingChangeLocation]
-    Date productionDate
+    ToporazDate productionDate
     String material
     String technique
-    String Location
+    String location
     Document reference
     /** End Production **/
 
@@ -24,5 +24,20 @@ class Furnishing {
 
 
     static constraints = {
+        name blank: false, nullable: false
+        type blank: true, nullable: true
+        category blank: false, nullable: false
+
+        productionDate nullable: true
+        material nullable: true
+        technique  nullable: true
+        location  nullable: true
+        reference nullable: true
+
+        conservationStatus nullable: true
+        conditionState nullable: true
+        conservationStatusAssessedBy  nullable: true
+        conservationStatusDate nullable: true
+        conservationStatusReference nullable: true
     }
 }
