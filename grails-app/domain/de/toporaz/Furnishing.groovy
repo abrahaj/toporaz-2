@@ -3,10 +3,11 @@ package de.toporaz
 class Furnishing {
     String name
     String type
+    String note
     String category
 
     /** Production info **/
-    static hasMany = [donor:Person,producer:Person, measurement:Measurement, furnishingChangeLocation:FurnishingChangeLocation]
+    static hasMany = [donor:Person,producer:Person, measurement:Measurement, changeLocation:ChangeLocation]
     ToporazDate productionDate
     String material
     String technique
@@ -14,8 +15,8 @@ class Furnishing {
     Document reference
     /** End Production **/
 
-    String conservationStatus
     String conditionState
+    String conservationStatus
     Person conservationStatusAssessedBy
     ToporazDate conservationStatusDate
     Document conservationStatusReference
@@ -25,8 +26,9 @@ class Furnishing {
 
     static constraints = {
         name blank: false, nullable: false
+        note blank: true, nullable: true, type: 'text'
         type blank: true, nullable: true
-        category blank: false, nullable: false
+        category blank: true, nullable: true
 
         productionDate nullable: true
         material nullable: true

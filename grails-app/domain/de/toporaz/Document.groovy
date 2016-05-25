@@ -3,29 +3,38 @@ package de.toporaz
 class Document {
     String name
     String type
-    Person quoted
+    ToporazDate publishedDate
+    String publishedLocation
+
     static belongsTo = Person
-    static hasMany = [authors:Person,quotes:Person]
-
-    /*Material:
-
-    Publishing
-    Published:
-    Publishing Place:
-    Move
+    static hasMany = [author: Person, referencePerson: Person, referenceBuilding: Building, changeLocation: ChangeLocation]
 
 
-    Location:
+    String shelfmark
+    String scale
+    String measurement
+    String volume
+    String placeOfStorage
+    String digitalCopy
 
-    Shelfmark:
-    Scale:
-    Measurements:
-    Volume:
-    Place of Storage:
-    Digital Copy:
-    */
 
-    static mappedBy = [ quotes: "none", authors: "none" ]
+    static mappedBy = [quotes: "none", author: "none"]
 
-    static constraints = { quotes nullable: true }
+    static constraints = {
+        name blank: false, nullable: false
+        type blank: true, nullable: true
+        author nullable: false
+        publishedDate blank: true, nullable: true
+        publishedLocation blank: true, nullable: true
+        changeLocation nullable: true
+        shelfmark blank: true, nullable: true
+        scale blank: true, nullable: true
+        measurement blank: true, nullable: true
+        volume blank: true, nullable: true
+        placeOfStorage blank: true, nullable: true
+        digitalCopy blank: true, nullable: true
+        referencePerson nullable: true
+        referenceBuilding nullable: true
+
+    }
 }
