@@ -2,15 +2,24 @@ package de.toporaz
 
 class User {
 
-    String login
+    String username
     String password
-    String email
-
-
+    boolean enabled = true
+    boolean accountExpired
+    boolean accountLocked
+    boolean credentialsExpired
 
     static constraints = {
-        login size: 3..15, blank: false, unique: true
-        password size: 5..15, blank: false
-        email email: true, blank: false
+        username blank: false, unique: true
+        password blank: false
     }
+
+    static mapping = {
+        password column: '`password`'
+    }
+
+    Set getAuthorities() {
+        UserAuthority.findAllByUser(this).collect { it.authority }
+    }
+
 }

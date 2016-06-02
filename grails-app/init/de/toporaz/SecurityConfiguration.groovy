@@ -3,17 +3,14 @@ package de.toporaz
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("ab").password("kotkot").roles("USER");
-        
-    }
+    UserDetailsService userDetailsService
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -25,5 +22,10 @@ class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin().permitAll()
                 .and()
                 .logout().permitAll()
+    }
+
+    @Autowired
+    protected void globalConfigure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService)
     }
 }
