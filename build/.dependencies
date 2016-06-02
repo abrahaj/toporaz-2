@@ -1,6 +1,7 @@
 dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.5.RELEASE/a71e1d7fff512b1eadd3426ea1ce5b4cc703c429/spring-boot-starter-logging-1.3.5.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.5.RELEASE/2bcfa86bb3afd95eff5252db6d78f2693b706997/spring-boot-autoconfigure-1.3.5.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.3.5.RELEASE/3a7e37b757f3d23fc62a576a74b5e5be2061fc69/spring-boot-starter-security-1.3.5.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.1.7/ce050bca1065725011c592a141c19029be0ea748/grails-core-3.1.7.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.3.5.RELEASE/abb4f12506b8cd47689be14b0f54a24dd79f3ed5/spring-boot-starter-actuator-1.3.5.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.3.5.RELEASE/b4c6277ccec38c51716659886efec073c4b386ea/spring-boot-starter-tomcat-1.3.5.RELEASE.jar
@@ -20,6 +21,10 @@ dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed/jul-to-slf4j-1.7.21.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.21/b3700d97464d99bdcd42c0177d6e7951c94d75ff/log4j-over-slf4j-1.7.21.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.5.RELEASE/b218ba5f3bd01e657fbde9b085722da1fafa4f8a/spring-boot-1.3.5.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.5.RELEASE/188c658fabbce0d1ccc1ae18a1cf58f566208c78/spring-boot-starter-1.3.5.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/5efbfccb19efda2956b8977561bf4da6b15b0d0e/spring-aop-4.2.6.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.0.4.RELEASE/cb303b01fe84ca8845312171c77c8b8ff9d4a272/spring-security-config-4.0.4.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.0.4.RELEASE/c52e77d38a48b33f955ab25156f15e564c9b616f/spring-security-web-4.0.4.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/xalan/serializer/2.7.2/24247f3bb052ee068971393bdb83e04512bb1c3c/serializer-2.7.2.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.6/844cb06c553a5e6a736f44aa2b67d25bf6a34fde/groovy-2.4.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar
@@ -31,7 +36,6 @@ dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.6.RELEASE/bbf3c8526fe37bb341507f28db17882d4348dbca/spring-context-4.2.6.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-bootstrap/3.1.7/a3bac42373be0b3f6d64e5dbe275f6704171048d/grails-bootstrap-3.1.7.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-spring/3.1.7/3f8f37be9d172b729dc96e3b563abb4604f1e88/grails-spring-3.1.7.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.5.RELEASE/188c658fabbce0d1ccc1ae18a1cf58f566208c78/spring-boot-starter-1.3.5.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.3.5.RELEASE/97b25693835ca5bf436dea760fe337833d6aa51b/spring-boot-actuator-1.3.5.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.33/4e7f547fbb2c364cb5e02a58790c5fb89e31efed/tomcat-embed-core-8.0.33.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.33/31423f2d493cf1f7cf5f0082c9f94640e93b8c1b/tomcat-embed-el-8.0.33.jar
@@ -83,10 +87,12 @@ dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.2.16.v20160414/ea0ac66b842c2c496f45dd2445cc8c9a16b7c041/websocket-client-9.2.16.v20160414.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/5efbfccb19efda2956b8977561bf4da6b15b0d0e/spring-aop-4.2.6.RELEASE.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.6.RELEASE/c0182d73f348ab11d51d45cbe29f3820c32d0ccc/spring-expression-4.2.6.RELEASE.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.6/60ed82a5601931c5b560bece47d6fd98b36e7a4f/groovy-xml-2.4.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/d64fb662c9e42789149f5078a62a22edda786c6a/snakeyaml-1.16.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.4.RELEASE/67e6eccc73a9887a7ca262c7cac20f9b36ce5a5d/spring-security-core-4.0.4.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.6.RELEASE/c0182d73f348ab11d51d45cbe29f3820c32d0ccc/spring-expression-4.2.6.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/d5ce949da3f3266f118ed899a153413613b503ad/spring-web-4.2.6.RELEASE.jar
+- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.6/60ed82a5601931c5b560bece47d6fd98b36e7a4f/groovy-xml-2.4.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.6/5108dde6049374ba980b360e1ecff49847baba4a/jackson-databind-2.6.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.1.7/92b58510092766120cfac9570d272cad69f8a641/grails-web-3.1.7.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.1.7/7b1a138121b167931c8d1088e34766ab4a8b8951/grails-plugin-controllers-3.1.7.jar
@@ -135,7 +141,6 @@ dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.16.v20160414/e0accd393d4f2db45d39ebe14265301408b29fb6/jetty-util-9.2.16.v20160414.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.16.v20160414/21b9bd4a4d9e497e5089d351e9256c885563888b/jetty-io-9.2.16.v20160414.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.2.16.v20160414/7ae2933fbb2f1d63bfbfd7ff922f43777c918d15/websocket-common-9.2.16.v20160414.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.6/7ef6440e71531604aa44a5eb62d4b466ffbf7e8f/jackson-annotations-2.6.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.6/2eb801df67aacaf5b1deb4ac626e1964508e47b/jackson-core-2.6.6.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.2.6.RELEASE/7ed7b15e95eedd551ac979bd8c295256d96cf2ff/spring-aspects-4.2.6.RELEASE.jar
@@ -160,7 +165,6 @@ dependencies:
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-bus/2.0.8.RELEASE/dea2861087164495584ac4a01835e665dc0a32a2/reactor-bus-2.0.8.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.4.1/2231238e391057a53f92bde5bbc588622c1956c3/commons-validator-1.4.1.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/2.4.6/febbfa4834eb8093f80281b1242c893c64761580/groovy-json-2.4.6.jar
-- file:/home/arb/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/d5ce949da3f3266f118ed899a153413613b503ad/spring-web-4.2.6.RELEASE.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.grails/grails-taglib/3.1.7/78f8fdd92fea98ed53fc0de0c01223d9cbd9bc3b/grails-taglib-3.1.7.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/javax.transaction/jta/1.1/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar
 - file:/home/arb/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-ant/2.4.6/77fc24973dd4205d3cd2d6707b39c8ea9e0aa624/groovy-ant-2.4.6.jar
