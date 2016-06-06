@@ -5,5 +5,6 @@ class Profession {
     String description
     static constraints = {
         name nullable: false
+        description size: 1..255
     }
 }

@@ -22,6 +22,7 @@ class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin().permitAll()
                 .and()
                 .logout().permitAll()
+        http.csrf().disable()
     }
 
     @Autowired

@@ -6,12 +6,9 @@ class Person {
     String AlternativeName
 
     Profession profession
+/*    static hasMany = [marriage:Marriage]
+    static mappedBy = [marriage:'myprop']*/
     /*
-
-    Marriage
-    MarriedTo:
-    Reference:
-
     Person Relation
     Relation Type:
     Person:
