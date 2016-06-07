@@ -2,61 +2,33 @@ package de.toporaz
 
 class Person {
     String name
+    String note
     //TODO HAS MORE THAN ONE ALTERNATIVE NAME
-    String AlternativeName
+    String alternativeName
 
     Profession profession
-/*    static hasMany = [marriage:Marriage]
-    static mappedBy = [marriage:'myprop']*/
-    /*
-    Person Relation
-    Relation Type:
-    Person:
+    static hasMany = [marriage:Marriage, relation:PersonRelation, resident:Resident, administrativeFunction:AdministrativeFunction]
+    static hasOne = [birth:Birth, death:Death]
+    static mappedBy = [marriage:"partner1"]
 
-    Donated / Commisioned
-    Donor/Commisioner:
-    Reference:
+    SocialStatusType socialStatus
 
-    Depictions/Portraits :
+    static constraints = {
+        name nullable: false
+        note blank: true, nullable: true, type: 'text'
+        alternativeName nullable: true
+        birth nullable:true
+        death nullable:true
+        profession nullable:true
+        marriage nullable: true
+        relation nullable:true
+        resident nullable:true
+        socialStatus nullable:true
+        administrativeFunction nullable:true
+    }
 
-    Resident
-    Occupant:
-    Change of Residence
-    Residence Start Date:
-    Residence Leaving Date:
-    Reference:
-
-
-    Social Group:
-
-    Administrative Function
-    Official Function:
-    Office:
-    Office Start:
-    Office End:
-    Reference:
-
-    Birth
-    Date of Birth:
-    Place of birth:
-    Reference:
-    Death
-    Date of death:
-    Place of death:
-    Buried:
-    Reference:
-
-    Owner
-    Ownership:
-    Received From:
-    Reference Start:
-    Reference:
-    Reference End:
-    static belongsTo = [ supervisor: Person ]
-
-    static mappedBy = [ supervisor: "none", parent: "none" ]
-
-    static constraints = { supervisor nullable: true }
-*/
-    static constraints = {name nullable: false}
+    enum SocialStatusType {
+        Patrizier,
+        Handwerker
+    }
 }

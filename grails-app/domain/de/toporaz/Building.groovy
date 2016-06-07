@@ -12,7 +12,7 @@ class Building {
 
 
     static mappedBy = [ firstReference: "none", desctructionReference: "none" ]
-    static hasMany = [buildingFunction:BuildingFunction, buildingTypology:BuildingTypology, address: Address, buildingPart:BuildingPart]
+    static hasMany = [buildingFunction:BuildingFunction, buildingTypology:BuildingTypology, address: Address, buildingPart:BuildingPart, buildingOwnership: BuildingOwnership]
 
 
     static constraints = {
@@ -24,11 +24,12 @@ class Building {
 
         firstReference nullable: true
         desctructionReference  nullable: true
-
+        buildingOwnership nullable:true
         buildingFunction nullable:true
         buildingTypology nullable:true
         address nullable:true
         buildingPart nullable:true
+        buildingOwnership nullable:true
 
 
     }

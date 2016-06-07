@@ -7,7 +7,7 @@ class Furnishing {
     String category
 
     /** Production info **/
-    static hasMany = [donor:Person,producer:Person, measurement:Measurement, changeLocation:ChangeLocation]
+    static hasMany = [donor:Person,producer:Person, measurement:Measurement, changeLocation:ChangeLocation, depicts: Person]
     ToporazDate productionDate
     String material
     String technique
@@ -21,7 +21,7 @@ class Furnishing {
     ToporazDate conservationStatusDate
     Document conservationStatusReference
 
-    static mappedBy = [ donor: "none", producer: "none" ]
+    static mappedBy = [ donor: "none", producer: "none", depicts:"none"]
 
 
     static constraints = {
